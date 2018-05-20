@@ -1,0 +1,39 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+.image-box{ width: 960px;
+	height: 600px;
+	margin:20px auto;
+	overflow: hidden;}
+.images{ position: relative;
+top: 0;
+left: 0;
+	}
+
+.images>img{ width: 100%;
+	transition: all 0.8s;
+	}
+.images > img.current{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.images > img.leave{
+	position: absolute;
+	top: 0;
+	left: -100%;
+}
+.images > img.enter{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	
+}
+
+.images>img.lastright{
+	position: absolute;
+	top: 0;
+	left:100%;
+}		
